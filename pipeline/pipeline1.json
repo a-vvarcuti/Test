@@ -28,7 +28,7 @@
 				},
 				"outputs": [
 					{
-						"referenceName": "Avro1",
+						"referenceName": "Avro2",
 						"type": "DatasetReference"
 					}
 				]
