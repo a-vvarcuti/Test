@@ -5,11 +5,20 @@
 			"referenceName": "AzureBlobStorage1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"newdata": {
+				"type": "String"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureBlobStorageLocation"
+				"type": "AzureBlobStorageLocation",
+				"container": {
+					"value": "CREATE TABLE dbo.emp\n(\n    ID int IDENTITY(1,1) NOT NULL,\n    FirstName varchar(50),\n    LastName varchar(50)\n)\nGO\n\nCREATE CLUSTERED INDEX IX_emp_ID ON dbo.emp (ID);",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
