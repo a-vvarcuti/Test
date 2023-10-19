@@ -31,13 +31,9 @@
 						}
 					},
 					"sink": {
-						"type": "AvroSink",
-						"storeSettings": {
-							"type": "AzureBlobStorageWriteSettings"
-						},
-						"formatSettings": {
-							"type": "AvroWriteSettings"
-						}
+						"type": "AzureSqlSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false
 					},
 					"enableStaging": false,
 					"translator": {
@@ -57,7 +53,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Avro2",
+						"referenceName": "AzureSqlDatabaseLinkedService",
 						"type": "DatasetReference"
 					}
 				]
