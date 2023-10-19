@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "AvroSource",
+						"type": "DelimitedTextSource",
 						"additionalColumns": [
 							{
 								"value": "$$FILEPATH"
@@ -24,7 +24,10 @@
 						],
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
-							"enablePartitionDiscovery": false
+							"enablePartitionDiscovery": true
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
 						}
 					},
 					"sink": {
@@ -48,7 +51,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Avro2",
+						"referenceName": "Azurestorage",
 						"type": "DatasetReference"
 					}
 				],
