@@ -17,6 +17,11 @@
 				"typeProperties": {
 					"source": {
 						"type": "AvroSource",
+						"additionalColumns": [
+							{
+								"value": "$$FILEPATH"
+							}
+						],
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
