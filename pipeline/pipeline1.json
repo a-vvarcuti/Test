@@ -16,20 +16,9 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "DelimitedTextSource",
-						"additionalColumns": [
-							{
-								"value": "$$FILEPATH"
-							}
-						],
-						"storeSettings": {
-							"type": "AzureBlobStorageReadSettings",
-							"recursive": true,
-							"enablePartitionDiscovery": true
-						},
-						"formatSettings": {
-							"type": "DelimitedTextReadSettings"
-						}
+						"type": "AzureSqlSource",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
 					},
 					"sink": {
 						"type": "AzureSqlSink",
@@ -48,7 +37,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Azurestorage",
+						"referenceName": "AzureSqlDatabaseLinkedService",
 						"type": "DatasetReference"
 					}
 				],
