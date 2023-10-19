@@ -23,9 +23,32 @@
 							"enablePartitionDiscovery": false
 						}
 					},
-					"enableStaging": false
+					"sink": {
+						"type": "AvroSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "AvroWriteSettings"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
 				},
 				"inputs": [
+					{
+						"referenceName": "Avro1",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
 					{
 						"referenceName": "Avro1",
 						"type": "DatasetReference"
