@@ -6,7 +6,7 @@
 		"type": "AzureSqlDatabase",
 		"typeProperties": {
 			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=dboserver.database.windows.net;initial catalog=dboserver;user id=v-vvarcuti",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDhERUM4QTk4LUFGRTgtNEQxNC1CREY1LTIyN0U0RjdEMTY5RV83NTYwNDE3Ni0zNjZhLTRlZmQtODQ3Zi02ZmJmMGFhZmQ4ZGEiDQp9"
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDhERUM4QTk4LUFGRTgtNEQxNC1CREY1LTIyN0U0RjdEMTY5RV8yZGM4Zjk5ZC0wNTNjLTQzZjEtODUyNS01NmJlNzdiMDEwZmMiDQp9"
 		}
 	}
 }
