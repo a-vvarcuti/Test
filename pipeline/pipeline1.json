@@ -68,7 +68,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "Avro1",
+						"referenceName": "Avro4",
 						"type": "DatasetReference"
 					},
 					"fieldList": [
