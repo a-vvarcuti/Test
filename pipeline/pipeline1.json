@@ -68,7 +68,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "Avro4",
+						"referenceName": "DelimitedText1",
 						"type": "DatasetReference"
 					},
 					"fieldList": [
@@ -78,6 +78,9 @@
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
 						"enablePartitionDiscovery": false
+					},
+					"formatSettings": {
+						"type": "DelimitedTextReadSettings"
 					}
 				}
 			}
