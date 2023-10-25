@@ -73,8 +73,7 @@
 					},
 					"fieldList": [
 						"itemName",
-						"lastModified",
-						"size"
+						"lastModified"
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
