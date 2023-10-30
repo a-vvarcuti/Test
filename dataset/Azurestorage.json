@@ -8,6 +8,9 @@
 		"parameters": {
 			"newdata": {
 				"type": "String"
+			},
+			"filename": {
+				"type": "string"
 			}
 		},
 		"annotations": [],
@@ -15,6 +18,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": "*csv",
 				"container": {
 					"value": "CREATE TABLE dbo.emp\n(\n    ID int IDENTITY(1,1) NOT NULL,\n    FirstName varchar(50),\n    LastName varchar(50)\n)\nGO\n\nCREATE CLUSTERED INDEX IX_emp_ID ON dbo.emp (ID);",
 					"type": "Expression"
