@@ -16,20 +16,13 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "DelimitedTextSource",
-						"storeSettings": {
-							"type": "AzureBlobStorageReadSettings",
-							"recursive": true,
-							"enablePartitionDiscovery": false
-						},
-						"formatSettings": {
-							"type": "DelimitedTextReadSettings"
-						}
+						"type": "AzureTableSource",
+						"azureTableSourceIgnoreTableNotFound": false
 					},
 					"sink": {
-						"type": "AzureSqlSink",
-						"writeBehavior": "insert",
-						"sqlWriterUseTableLock": false
+						"type": "AzureTableSink",
+						"azureTableInsertType": "merge",
+						"writeBatchSize": 10000
 					},
 					"enableStaging": false,
 					"translator": {
@@ -43,13 +36,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "Azurestorage",
+						"referenceName": "AzureTable1",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureSqlTable1",
+						"referenceName": "AzureTable1",
 						"type": "DatasetReference"
 					}
 				]
