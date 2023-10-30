@@ -16,8 +16,15 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "AzureTableSource",
-						"azureTableSourceIgnoreTableNotFound": false
+						"type": "BinarySource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"deleteFilesAfterCompletion": false
+						},
+						"formatSettings": {
+							"type": "BinaryReadSettings"
+						}
 					},
 					"sink": {
 						"type": "BinarySink",
@@ -30,7 +37,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "AzureTable1",
+						"referenceName": "Binary1",
 						"type": "DatasetReference"
 					}
 				],
