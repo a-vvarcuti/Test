@@ -31,7 +31,12 @@
 						"type": "BinarySink",
 						"storeSettings": {
 							"type": "AzureBlobStorageWriteSettings",
-							"copyBehavior": "FlattenHierarchy"
+							"copyBehavior": "FlattenHierarchy",
+							"metadata": [
+								{
+									"value": "$$LASTMODIFIED"
+								}
+							]
 						}
 					},
 					"enableStaging": false
