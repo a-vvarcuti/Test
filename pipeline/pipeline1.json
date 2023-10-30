@@ -20,19 +20,13 @@
 						"azureTableSourceIgnoreTableNotFound": false
 					},
 					"sink": {
-						"type": "AzureTableSink",
-						"azureTableInsertType": "merge",
-						"writeBatchSize": 10000
-					},
-					"enableStaging": false,
-					"translator": {
-						"type": "TabularTranslator",
-						"typeConversion": true,
-						"typeConversionSettings": {
-							"allowDataTruncation": true,
-							"treatBooleanAsNumber": false
+						"type": "BinarySink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings",
+							"copyBehavior": "FlattenHierarchy"
 						}
-					}
+					},
+					"enableStaging": false
 				},
 				"inputs": [
 					{
@@ -42,7 +36,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "AzureTable1",
+						"referenceName": "Binary1",
 						"type": "DatasetReference"
 					}
 				]
