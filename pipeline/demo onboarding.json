@@ -49,7 +49,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Azurestorage",
+						"referenceName": "Persons1",
 						"type": "DatasetReference"
 					}
 				]
