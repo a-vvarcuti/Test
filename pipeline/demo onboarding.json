@@ -21,15 +21,9 @@
 						"partitionOption": "None"
 					},
 					"sink": {
-						"type": "DelimitedTextSink",
-						"storeSettings": {
-							"type": "AzureBlobStorageWriteSettings"
-						},
-						"formatSettings": {
-							"type": "DelimitedTextWriteSettings",
-							"quoteAllText": true,
-							"fileExtension": ".csv"
-						}
+						"type": "AzureTableSink",
+						"azureTableInsertType": "merge",
+						"writeBatchSize": 10000
 					},
 					"enableStaging": false,
 					"translator": {
@@ -49,7 +43,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Persons1",
+						"referenceName": "Persons12",
 						"type": "DatasetReference"
 					}
 				]
