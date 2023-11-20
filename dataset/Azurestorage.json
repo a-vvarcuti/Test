@@ -18,7 +18,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "dbo.Persons1.csv",
+				"fileName": "dbo.Persons.csv",
 				"container": "newfile"
 			},
 			"columnDelimiter": ",",
