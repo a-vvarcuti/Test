@@ -49,7 +49,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DelimitedText3",
+						"referenceName": "Azurestorage",
 						"type": "DatasetReference"
 					}
 				]
