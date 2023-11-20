@@ -28,7 +28,7 @@
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
 							"quoteAllText": true,
-							"fileExtension": ".txt"
+							"fileExtension": ".csv"
 						}
 					},
 					"enableStaging": false,
@@ -49,7 +49,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Azurestorage",
+						"referenceName": "DelimitedText3",
 						"type": "DatasetReference"
 					}
 				]
