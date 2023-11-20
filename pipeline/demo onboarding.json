@@ -43,7 +43,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "AzureSqlDatabaseLinkedService",
+						"referenceName": "AzureSqlTable2",
 						"type": "DatasetReference"
 					}
 				],
