@@ -18,9 +18,9 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "*csv",
+				"fileName": "dbo.Persons.csv",
 				"container": {
-					"value": "CREATE TABLE dbo.emp\n(\n    ID int IDENTITY(1,1) NOT NULL,\n    FirstName varchar(50),\n    LastName varchar(50)\n)\nGO\n\nCREATE CLUSTERED INDEX IX_emp_ID ON dbo.emp (ID);",
+					"value": "-- Drop the existing Persons1 table if it exists\nIF OBJECT_ID('Persons1', 'U') IS NOT NULL\n    DROP TABLE Persons1;\n\n-- Create the Persons1 table\nCREATE TABLE Persons1 (\n    PersonID int,\n    LastName varchar(255),\n    FirstName varchar(255),\n    City varchar(255)\n);\n\n-- Insert a record into the Persons1 table\nINSERT INTO Persons1 (PersonID, LastName, FirstName, City)\nVALUES (1, 'Cardinal', 'Tom B. Erichsen', 'Stavanger');\n",
 					"type": "Expression"
 				}
 			},
