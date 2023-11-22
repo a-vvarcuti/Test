@@ -28,7 +28,7 @@
 		],
 		"typeProperties": {
 			"schema": "Tableq",
-			"table": "Tableq"
+			"table": "Tableqe"
 		}
 	}
 }
