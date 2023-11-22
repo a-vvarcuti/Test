@@ -25,10 +25,6 @@
 				"name": "City",
 				"type": "varchar"
 			}
-		],
-		"typeProperties": {
-			"schema": "dbo",
-			"table": "Persons1"
-		}
+		]
 	}
 }
