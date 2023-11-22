@@ -6,6 +6,10 @@
 		"typeProperties": {
 			"serviceEndpoint": "https://victorsstorage.blob.core.windows.net/",
 			"accountKind": "StorageV2"
+		},
+		"connectVia": {
+			"referenceName": "CentralUsir",
+			"type": "IntegrationRuntimeReference"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/linkedservices"
