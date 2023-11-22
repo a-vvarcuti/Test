@@ -27,8 +27,8 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "Tableq",
-			"table": "Tableqe"
+			"schema": "Table12",
+			"table": "Table12"
 		}
 	}
 }
