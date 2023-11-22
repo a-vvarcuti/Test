@@ -27,8 +27,8 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "table",
-			"table": "table1"
+			"schema": "Table11",
+			"table": "table12"
 		}
 	}
 }
