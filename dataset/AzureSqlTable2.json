@@ -25,6 +25,9 @@
 				"name": "City",
 				"type": "varchar"
 			}
-		]
+		],
+		"typeProperties": {
+			"schema": "Tabl"
+		}
 	}
 }
