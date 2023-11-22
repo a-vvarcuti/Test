@@ -5,6 +5,10 @@
 		"type": "AzureSqlDatabase",
 		"typeProperties": {
 			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=a-vvarcutidatabase.database.windows.net;Initial Catalog=Victordatabase"
+		},
+		"connectVia": {
+			"referenceName": "CentralUsir",
+			"type": "IntegrationRuntimeReference"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/linkedservices"
