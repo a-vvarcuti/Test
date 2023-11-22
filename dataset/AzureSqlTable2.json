@@ -27,8 +27,8 @@
 			}
 		],
 		"typeProperties": {
-			"schema": "Table11",
-			"table": "table12"
+			"schema": "dbo",
+			"table": "Persons1"
 		}
 	}
 }
