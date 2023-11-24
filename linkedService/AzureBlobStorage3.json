@@ -5,7 +5,7 @@
 		"annotations": [],
 		"type": "AzureBlobStorage",
 		"typeProperties": {
-			"sasUri": "https://victorsstorage.blob.core.windows.net/newfile?sp=r&st=2023-11-24T09:22:42Z&se=2023-11-24T17:22:42Z&sv=2022-11-02&sr=c&sig=kRQLOGMF0qNEzb0q2biS8qi6gZa2w1BiHuoQWb9M1FY%3D?https://victorsstorage.blob.core.windows.net/newfile?sp=r&st=2023-11-24T09:22:42Z&se=2023-11-24T17:22:42Z&sv=2022-11-02&sr=c&sig=kRQLOGMF0qNEzb0q2biS8qi6gZa2w1BiHuoQWb9M1FY%3D"
+			"sasUri": "sp=r&st=2023-11-24T09:22:42Z&se=2023-11-24T17:22:42Z&sv=2022-11-02&sr=c&sig=kRQLOGMF0qNEzb0q2biS8qi6gZa2w1BiHuoQWb9M1FY%3D"
 		},
 		"connectVia": {
 			"referenceName": "CentralUsir",
