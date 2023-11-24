@@ -1,16 +1,15 @@
 {
 	"name": "AzureBlobStorage3",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"annotations": [],
 		"type": "AzureBlobStorage",
 		"typeProperties": {
-			"serviceEndpoint": "https://victorsstorage.blob.core.windows.net/",
-			"accountKind": "StorageV2"
+			"sasUri": "sp=r&st=2023-11-24T09:22:42Z&se=2023-11-24T17:22:42Z&spr=https&sv=2022-11-02&sr=c&sig=njNq%2FZ0SyU3Q%2BvG7mgbyNr50Wnoj6rx7oVJBaDvDnbc%3D?https://victorsstorage.blob.core.windows.net/newfile?sp=r&st=2023-11-24T09:22:42Z&se=2023-11-24T17:22:42Z&spr=https&sv=2022-11-02&sr=c&sig=njNq%2FZ0SyU3Q%2BvG7mgbyNr50Wnoj6rx7oVJBaDvDnbc%3D"
 		},
 		"connectVia": {
 			"referenceName": "CentralUsir",
 			"type": "IntegrationRuntimeReference"
 		}
-	},
-	"type": "Microsoft.DataFactory/factories/linkedservices"
+	}
 }
